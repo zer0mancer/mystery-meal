@@ -34,6 +34,8 @@ get("/random_recipe") do
   @ingredient16 = parsed_data.at(0).fetch("strIngredient16")
   @ingredient17 = parsed_data.at(0).fetch("strIngredient17")
 
+  @image = parsed_data.at(0).fetch("strMealThumb")
+
 
 
   erb(:mystery_meal)

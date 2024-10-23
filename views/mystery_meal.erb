@@ -4,17 +4,55 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mystery Meal</title>
+
+  <style>
+       .image{
+      height: 400px;
+      width: 400px;
+      object-fit: cover;
+      display:flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+        html,
+    body {
+      height: 100%;
+    }
+
+    html {
+      display: table;
+      margin: auto;
+    }
+
+        body {
+      padding-top: 40px;
+      padding-bottom: 40px;
+      background-color: palevioletred;
+      display: table-cell;
+      vertical-align: middle;
+    }
+
+     div ,h3 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+  </style>
 </head>
 <body>
   
 <h3>Tonight you'll be having for dinner:</h3>
+
 <div>
 
-<img src=<%= @image %> alt="Picture of meal :<%= @meal %>">
+<p><img class="image" src=<%= @image %> alt="Picture of meal :<%= @meal %>"></p>
 
   <p><strong> "<%= @meal %>"</strong> </p>
 </div>
 
+<div>
 The Ingredients are:
   <p><i>-<%= @ingredient1 %></i></p>
   <p><i>-<%= @ingredient2 %></i></p>
@@ -33,6 +71,7 @@ The Ingredients are:
   <p><i>-<%= @ingredient15 %></i></p>
   <p><i>-<%= @ingredient16 %></i></p>
   <p><i>-<%= @ingredient17 %></i></p>
+  </div>
 
   <div>
     <h3>Recipe Preperations:</h3>

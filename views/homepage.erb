@@ -4,6 +4,41 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>What's for dinner?</title>
+
+  <style>
+    html,
+    body {
+      height: 100%;
+    }
+
+    html {
+      display: table;
+      margin: auto;
+    }
+
+    body {
+          padding-top: 40px;
+      padding-bottom: 40px;
+      background-color: red;
+      display: table-cell;
+      vertical-align: middle;
+    }
+
+    form {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    button {
+      background-color: green;
+       display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+
+  </style>
 </head>
 <body>
   
@@ -19,7 +54,7 @@
 
 <div>
   <form action="/random_recipe">
-    <button> Give me a meal! </button>
+    <p><button> Give me a meal! </button></p>
   </form>
 
 </div>

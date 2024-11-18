@@ -6,8 +6,13 @@ require "json"
 
 
 get("/") do
-  erb(:homepage)
+  redirect("/homepage")
 end
+
+get("/homepage") do
+    erb(:homepage)
+end
+
 
 
 get("/random_recipe") do
